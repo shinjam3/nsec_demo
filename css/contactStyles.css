@@ -1,0 +1,109 @@
+.contact-h1 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 40px 20px 20px 20px;
+}
+
+.contact-h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px 0 20px 0;
+}
+
+.contact-section {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: auto;
+}
+
+.contact-section-content {
+  width: 450px;
+  height: 350px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.contact-section-content > p {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.contact-map {
+  box-sizing: border-box;
+  width: 70%;
+  height: 500px;
+  margin: auto;
+}
+
+.contact-map > iframe {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-h1 {
+    font-size: 50px;
+  }
+
+  .contact-h2 {
+    font-size: 34px;
+  }
+
+  .contact-section {
+    width: 80%;
+  }
+
+  .contact-map {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-h2 {
+    padding: 0 0 20px 0;
+  }
+
+  .contact-section {
+    width: 100%;
+    flex-wrap: wrap-reverse;
+  }
+
+  .contact-section-content {
+    margin-bottom: 0px;
+  }
+
+  .contact-map {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-h1 {
+    font-size: 40px;
+  }
+
+  .contact-h2 {
+    font-size: 30px;
+  }
+
+  .contact-section-content > p {
+    font-size: 18px;
+  }
+
+  .contact-section-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-map {
+    height: 400px;
+  }
+}

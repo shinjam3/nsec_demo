@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="../css/styles.css" />
+    <link type="text/css" rel="stylesheet" href="../css/navStyles.css" />
+    <link type="text/css" rel="stylesheet" href="../css/aboutStyles.css" />
+    <link type="text/css" rel="stylesheet" href="../css/footerStyles.css" />
+    <link rel="icon" href="../media/nsec-logo.png" type="image/png" sizes="16x16 32x32" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    <title>North Scarborough Endoscopy Clinic</title>
+  </head>
+
+  <script>
+    function showMobileNav() {
+      document.getElementById("nav-list").style.width = "200px";
+    }
+
+    function closeMobileNav() {
+      document.getElementById("nav-list").style.width = "0px";
+    }
+  </script>
+
+  <body>
+    <nav class="navigation" role="navigation">
+      <a href="../" class="nav-logo-container">
+        <img class="nav-logo" src="../media/nsec-logo.png" alt="North Scarborough Endoscopy Clinic logo" />
+        <div class="nav-logo-text">
+          <p>NORTH SCARBOROUGH</p>
+          <p>ENDOSCOPY CLINIC</p>
+        </div>
+      </a>
+      <ul class="nav-items" id="nav-list">
+        <li class="nav-item"><a href="../">Home</a></li>
+        <li class="nav-item active"><a href=".">About</a></li>
+        <li class="nav-item"><a href="../procedures/">Procedures</a></li>
+        <li class="nav-item"><a href="../resources/">Resources</a></li>
+        <li class="nav-item"><a href="../contact/">Contact</a></li>
+        <li>
+          <button class="nav-mobile-control close-mobile" onclick="closeMobileNav()">
+            <i class="fa fa-times"></i>
+          </button>
+        </li>
+      </ul>
+
+      <button class="nav-mobile-control show-mobile" onclick="showMobileNav()">
+        <i class="fa fa-bars"></i>
+      </button>
+    </nav>
+
+    <main class="about-main">
+      <div class="about-img-container">
+        <img class="about-img" src="../media/nsec_office2.jpg" alt="North Scarborough Endoscopy Clinic receptionist office" />
+        <span class="about-img-overlay" />
+        <h1 class="about-img-text">About Us</h1>
+      </div>
+
+      <section>
+        <p class="about-p">
+          North Scarborough Endoscopy Clinic <abbr title="North Scarborough Endoscopy Clinic">(NSEC)</abbr> was founded in 2005 to help patients in Scarborough, Markham, and North York gain access to much needed endoscopic evaluation and care for their digestive issues.
+        </p>
+        <p class="about-p">
+          We are a modern, state-of-the-art out-patient clinic providing a full range of upper endoscopy (gastroscopy and push enteroscopy) and colorectal procedures.
+        </p>
+        <p class="about-p">
+          We strive to provide excellent endoscopic services and complete follow-up care for our patients.
+        </p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2 class="about-h2">Meet the <abbr title="North Scarborough Endoscopy Clinic">NSEC</abbr> Doctors</h2>
+        <div class="about-card-container">
+          <div class="about-card">
+            <h3 class="about-h3">Dr. Timothy Devlin, MD, FRCPC</h3>
+            <ul class="about-ul">
+              <li>University of Toronto Graduate</li>
+              <li>Medical School, Internal Medicine Residency and Gastroenterology Fellowship - U of T</li>
+              <li>35 years at Scarborough Birchmount Hospital, now part of the Scarborough Health Network</li>
+              <li>Practice Areas of General Gastroenterology and Internal Medicine. Diagnostic and Therapeutic Endoscopy at SHN and NSEC</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h3 class="about-h3">Dr. Gerald Chan, MB, FRCPC</h3>
+            <ul class="about-ul">
+              <li>University of Hong Kong Medical School Graduate (1980)</li>
+              <li>Internal Medicine, Gastroenterology and Hepatology in Hong Kong, London, UK (Royal Free Hospital Liver and GI Unit), University of Washington (Seattle) - GI Department</li>
+              <li>Special interest in Interventional Endoscopy and Hepatology</li>
+              <li>25 years at Scarborough Birchmount Hospital (SHN)</li>
+              <li>Languages: Cantonese, Mandarin (Putonghua) and English</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h3 class="about-h3">Dr. Winnie Leung, MD, FRCPC</h3>
+            <ul class="about-ul">
+              <li>Queen's University Medical School Graduate</li>
+              <li>General Surgery Residency - Queen's University</li>
+              <li>Colorectal Surgical Fellowship - University of Pennsylvania</li>
+              <li>21 years at Scarborough Birchmount Hospital (SHN)</li>
+              <li>Special interest in Colon and Rectal problems and Breast Cancer</li>
+              <li>Languages: English and Cantonese</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h3 class="about-h3">Dr. Vincent Thien, MD, FRCPC</h3>
+            <ul class="about-ul">
+              <li>University of British Columbia Medical School Graduate</li>
+              <li>Internal Medicine and Gastroenterology Fellowship - U of T</li>
+              <li>16 years at Scarborough Birchmount Hospital (SHN)</li>
+              <li>Current GI Division Lead for Scarborough Health Network</li>
+              <li>Special interest in General Gastroenterology and Hepatology, and Medical Education (U of T)</li>
+              <li>Languages: English</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h3 class="about-h3">Dr. Jason Reinglas, MD, FRCPC</h3>
+            <ul class="about-ul">
+              <li>University of Ottawa Medical School Graduate</li>
+              <li>Internal Medicine and Gastroenterology Fellowship - University of Ottawa</li>
+              <li>Fellowship in Inflammatory Bowel Disease - McGill University</li>
+              <li>Hospital Privileges at Scarborough Health Network</li>
+              <li>Languages: English and French</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo-container">
+        <img src="../media/nsec-logo.png" alt="North Scarborough Endoscopy Clinic logo" />
+        <div>
+          <h4>NORTH SCARBOROUGH ENDOSCOPY CLINIC</h4>
+          <p>4040 Finch Avenue East, Suite 105</p>
+          <p>Toronto, Ontario, M1S 4V5</p>
+          <p>Tel. 416-293-9402</p>
+          <p>Fax. 416-293-7470</p>
+        </div>
+      </div>
+      <p>&copy; 2021 North Scarborough Endoscopy Clinic</p>
+      <button><a href="#">&uarr;</a></button>
+    </footer>
+  </body>
+  <script> </script>
+</html>

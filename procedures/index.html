@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="../css/styles.css" />
+    <link type="text/css" rel="stylesheet" href="../css/navStyles.css" />
+    <link type="text/css" rel="stylesheet" href="../css/proceduresStyles.css" />
+    <link type="text/css" rel="stylesheet" href="../css/footerStyles.css" />
+    <link rel="icon" href="../media/nsec-logo.png" type="image/png" sizes="16x16 32x32" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    <title>North Scarborough Endoscopy Clinic</title>
+  </head>
+
+  <script>
+    function showMobileNav() {
+      document.getElementById("nav-list").style.width = "200px";
+    }
+
+    function closeMobileNav() {
+      document.getElementById("nav-list").style.width = "0px";
+    }
+  </script>
+
+  <body>
+    <nav class="navigation" role="navigation">
+      <a href="../" class="nav-logo-container">
+        <img class="nav-logo" src="../media/nsec-logo.png" alt="North Scarborough Endoscopy Clinic logo" />
+        <div class="nav-logo-text">
+          <p>NORTH SCARBOROUGH</p>
+          <p>ENDOSCOPY CLINIC</p>
+        </div>
+      </a>
+      <ul class="nav-items" id="nav-list">
+        <li class="nav-item"><a href="../">Home</a></li>
+        <li class="nav-item"><a href="../about/">About</a></li>
+        <li class="nav-item active"><a href=".">Procedures</a></li>
+        <li class="nav-item"><a href="../resources/">Resources</a></li>
+        <li class="nav-item"><a href="../contact/">Contact</a></li>
+        <li>
+          <button class="nav-mobile-control close-mobile" onclick="closeMobileNav()">
+            <i class="fa fa-times"></i>
+          </button>
+        </li>
+      </ul>
+
+      <button class="nav-mobile-control show-mobile" onclick="showMobileNav()">
+        <i class="fa fa-bars"></i>
+      </button>
+    </nav>
+
+    <main>
+      <h1 class="procedures-h1">Procedures</h1>
+      <h2 class="procedures-h2">We provide a full range of gastrointestinal and colorectal procedures including...</h2>
+
+      <section class="procedures-section">
+        <div>
+          <h3 class="procedures-h3">Diagnostic and Screening Procedures:</h3>
+          <ul class="procedures-ul">
+            <li>Colonoscopy</li>
+            <li>Gastroscopy</li>
+            <li>Small Bowel Push Enteroscopy</li>
+            <li>Flexible Sigmoidoscopy</li>
+            <li>Biopsy and Removal of Polyps</li>
+          </ul>
+        </div>
+        <img class="procedures-img" src="../media/nsec_office.jpg" alt="North Scarborough Endoscopy Clinic office" />
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo-container">
+        <img src="../media/nsec-logo.png" alt="North Scarborough Endoscopy Clinic logo" />
+        <div>
+          <h4>NORTH SCARBOROUGH ENDOSCOPY CLINIC</h4>
+          <p>4040 Finch Avenue East, Suite 105</p>
+          <p>Toronto, Ontario, M1S 4V5</p>
+          <p>Tel. 416-293-9402</p>
+          <p>Fax. 416-293-7470</p>
+        </div>
+      </div>
+      <p>&copy; 2021 North Scarborough Endoscopy Clinic</p>
+      <button><a href="#">&uarr;</a></button>
+    </footer>
+  </body>
+  <script> </script>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="../css/styles.css" />
+    <link type="text/css" rel="stylesheet" href="../css/navStyles.css" />
+    <link type="text/css" rel="stylesheet" href="../css/resourcesStyles.css" />
+    <link type="text/css" rel="stylesheet" href="../css/footerStyles.css" />
+    <link rel="icon" href="../media/nsec-logo.png" type="image/png" sizes="16x16 32x32" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    <title>North Scarborough Endoscopy Clinic</title>
+  </head>
+
+  <script>
+    function showMobileNav() {
+      document.getElementById("nav-list").style.width = "200px";
+    }
+
+    function closeMobileNav() {
+      document.getElementById("nav-list").style.width = "0px";
+    }
+  </script>
+
+  <body>
+    <nav class="navigation" role="navigation">
+      <a href="../" class="nav-logo-container">
+        <img class="nav-logo" src="../media/nsec-logo.png" alt="North Scarborough Endoscopy Clinic logo" />
+        <div class="nav-logo-text">
+          <p>NORTH SCARBOROUGH</p>
+          <p>ENDOSCOPY CLINIC</p>
+        </div>
+      </a>
+      <ul class="nav-items" id="nav-list">
+        <li class="nav-item"><a href="../">Home</a></li>
+        <li class="nav-item"><a href="../about/">About</a></li>
+        <li class="nav-item"><a href="../procedures/">Procedures</a></li>
+        <li class="nav-item active"><a href=".">Resources</a></li>
+        <li class="nav-item"><a href="../contact/">Contact</a></li>
+        <li>
+          <button class="nav-mobile-control close-mobile" onclick="closeMobileNav()">
+            <i class="fa fa-times"></i>
+          </button>
+        </li>
+      </ul>
+
+      <button class="nav-mobile-control show-mobile" onclick="showMobileNav()">
+        <i class="fa fa-bars"></i>
+      </button>
+    </nav>
+
+    <main>
+      <h1 class="resources-h1">Resources</h1>
+      <section class="resources-section">
+        <p>We welcome referrals from family physicians and specialists</p>
+        <p>
+          Our professional staff will make every effort to ensure the best result possible for every patient with minimum discomfort and rapid recovery.
+        </p>
+        <p>Every effort is made to accommodate urgent referrals.</p>
+        <p>Services are completely covered by <abbr title="Ontario Health Insurance Plan">OHIP</abbr> with no additional fees.</p>
+        <p>Patient referrals can be faxed to us at: 416-293-7470</p>
+        <p>A patient referral form is provided below for your convenience:</p>
+        <p class="download-form"><a href="../files/nsec_referral_form.pdf" target="_blank">Download Referral Form</a></p>
+        <p>
+          Our endoscopy clinic carries a fleet of up-to-date Olympus Pediatric and Adult colonoscopes and gastroscopes with capabilities for Image Capture for photodocumentation.
+        </p>
+        <p>Medivator Sterilization System guarantees the highest level of sterilization.</p>
+        <p>A patient colonoscopy prep sheet is provided below for your convenience:</p>
+        <p class="download-form"><a href="../files/nsec_colonoscopy_prep.pdf" target="_blank">Download Colonoscopy Prep Sheet</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo-container">
+        <img src="../media/nsec-logo.png" alt="North Scarborough Endoscopy Clinic logo" />
+        <div>
+          <h4>NORTH SCARBOROUGH ENDOSCOPY CLINIC</h4>
+          <p>4040 Finch Avenue East, Suite 105</p>
+          <p>Toronto, Ontario, M1S 4V5</p>
+          <p>Tel. 416-293-9402</p>
+          <p>Fax. 416-293-7470</p>
+        </div>
+      </div>
+      <p>&copy; 2021 North Scarborough Endoscopy Clinic</p>
+      <button><a href="#">&uarr;</a></button>
+    </footer>
+  </body>
+  <script> </script>
+</html>

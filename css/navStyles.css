@@ -1,0 +1,165 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: lightskyblue;
+  z-index: 3;
+}
+
+.nav-logo-container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 20px 0 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  width: auto;
+}
+
+.nav-logo {
+  display: block;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.nav-logo:hover {
+  box-shadow: 0px 0px 20px 1px gainsboro;
+  transition: 0.3s;
+}
+
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  line-height: 1;
+}
+
+.nav-items {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.nav-item {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  width: 150px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 22px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.nav-item:hover {
+  background-color: gainsboro;
+  transition: 0.5s;
+}
+.nav-item.active {
+  background-color: deepskyblue;
+}
+
+.nav-item > a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-mobile-control {
+  display: none;
+}
+
+.nav-mobile-control > i {
+  font-size: 20px;
+}
+
+.show-mobile {
+  top: 30px;
+  left: 20px;
+}
+
+.close-mobile {
+  top: 10px;
+  right: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .nav-logo-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 16px;
+    color: black;
+    width: 250px;
+  }
+
+  .nav-logo {
+    height: 60px;
+  }
+  .nav-logo:hover {
+    box-shadow: 0px 0px 20px 1px gainsboro;
+    transition: 0.3s;
+  }
+
+  .nav-logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    line-height: 1;
+  }
+
+  .nav-items {
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100vh;
+    background-color: deepskyblue;
+    transition: 0.5s;
+  }
+
+  .nav-item {
+    background-color: deepskyblue;
+    height: 80px;
+    font-size: 18px;
+    transition: 0s;
+  }
+  .nav-item:hover > a {
+    background-color: deepskyblue;
+    transition: 0s;
+  }
+  .nav-item.active > a {
+    color: white;
+  }
+
+  .nav-mobile-control {
+    display: block;
+    position: absolute;
+    border: none;
+    background: none;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .show-mobile {
+    top: 30px;
+    left: 10px;
+  }
+}

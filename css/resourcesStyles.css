@@ -1,0 +1,54 @@
+.resources-h1 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 40px 20px 40px 20px;
+}
+
+.resources-section {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 50px 0 50px;
+  width: 70%;
+  margin: auto;
+}
+
+.resources-section > p {
+  font-size: 24px;
+  line-height: 1.5;
+  padding-bottom: 30px;
+}
+
+.resources-section > p.download-form {
+  margin: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .resources-h1 {
+    font-size: 50px;
+  }
+
+  .resources-section {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .resources-h1 {
+    font-size: 40px;
+  }
+
+  .resources-section {
+    width: 100%;
+  }
+
+  .resources-section > p {
+    font-size: 20px;
+  }
+
+  .resources-section > p.download-form {
+    text-align: left;
+    margin: 0px;
+  }
+}
